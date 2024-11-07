@@ -61,7 +61,7 @@ Here we take testing `EnDiff-r50` as an example.
 First download our checkpoint file to `checkpoints/endiff_r50_urpc.pth`:
 ```shell
 mkdir checkpoints
-wget -P ./checkpoints/ 
+wget -P ./checkpoints/ https://github.com/xiaoDetection/
 ```
 Then test our model (set '--cfg-options' to avoid loading pre-trained weights):
 ```shell
@@ -75,7 +75,7 @@ python tools/test.py \
 
 Fist download our pre-trained model:
 ```shell
-wget -P ./checkpoints/ 
+wget -P ./checkpoints/ https://github.com/xiaoDetection/
 ```
 Then train a model:
 ```shell
