@@ -5,8 +5,7 @@ Marine Object Detection](). It is based on [mmdetection](https://github.com/open
 The paper aims to use unpaired high-quality and underwater images as training data for image enhancement to improve downstream detection tasks. The key challenge is to generate enhanced images that remain relatively proximate to the distribution of underwater inputs while also approaching the distribution of high-quality images. To find the trade-off results, we propose an enhancement paradigm called En-Diff. En-Diff consists of image perturbation and enhancement steps. The first step adds appropriate Gaussian noise to the unpaired data to smooth out certain image differences while preserving the overall appearance of the underwater input. The second step produces trade-off enhancement results through iterative denoising guided by high-quality images. Finally, En-Diff unrolls to a well-designed promotion module. Evaluations on real-world underwater datasets demonstrate that EnDiff outperforms state-of-the-art detection methods.
 ![fig1](./figs/fig1.png)
 ## Framework and Promotion Module
-As shown in Fig.2 (a), the image perturbation step adds suitable noise to unpaired underwater and high-quality images to smooth out some image content differences, while still preserving the overall appearance of the underwater input. And the image enhancement step, starting from the noise state
-of the underwater input of the image perturbation step, enhances underwater images by iterative denoising guided by high-quality images.
+As shown in Fig.2 (a), the image perturbation step adds suitable noise to unpaired underwater and high-quality images to smooth out some image content differences, while still preserving the overall appearance of the underwater input. And the image enhancement step, starting from the noise state of the underwater input of the image perturbation step, enhances underwater images by iterative denoising guided by high-quality images.
 - We use underwater images from the URPC2020 dataset, which can be downloaded from [here](https://github.com/xiaoDetection/learning-cruxes-to-push/releases/download/release_datasets/urpc2020.zip).
 - We use high-quality images from the COCO dataset, which can be download from [here](https://cocodataset.org/#download).
 
@@ -40,7 +39,7 @@ pip install yapf==0.40.1 numpy==1.26.4 mmdet==2.28.2
 ```
 To clone EnDiff, run:
 ```shell
-git clone 
+git clone https://github.com/xiaoDetection/en-diff.git
 cd en-diff
 ```
 ### Data Preperation
