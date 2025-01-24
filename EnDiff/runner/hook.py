@@ -32,7 +32,7 @@ class TrainModeControlHook(Hook):
         
 
 @HOOKS.register_module()
-class StepMulLrUpdaterHook(LrUpdaterHook):
+class MulStepLrUpdaterHook(LrUpdaterHook):
     def __init__(
             self,
             step,

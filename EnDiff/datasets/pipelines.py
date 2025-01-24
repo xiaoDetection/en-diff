@@ -46,7 +46,7 @@ class FormatBundle(DefaultFormatBundle):
         if self.img_to_float is True and hq_img.dtype == np.uint8:
             hq_img = hq_img.astype(np.float32)
         if len(hq_img.shape) < 3:
-            hq_img = np.expand_dims(img, -1)
+            hq_img = np.expand_dims(hq_img, -1)
         if not hq_img.flags.c_contiguous:
             hq_img = np.ascontiguousarray(hq_img.transpose(2, 0, 1))
             hq_img = to_tensor(hq_img)

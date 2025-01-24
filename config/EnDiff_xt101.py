@@ -83,57 +83,6 @@ model = dict(
                     loss_weight=1.0),
                 loss_bbox=dict(type='SmoothL1Loss', beta=1.0, loss_weight=1.0))
         ]),
-    train_cfg=dict(
-        rcnn=[
-            dict(
-                assigner=dict(
-                    type='MaxIoUAssigner',
-                    pos_iou_thr=0.55,
-                    neg_iou_thr=0.55,
-                    min_pos_iou=0.55,
-                    match_low_quality=False,
-                    ignore_iof_thr=-1),
-                sampler=dict(
-                    type='RandomSampler',
-                    num=512,
-                    pos_fraction=0.25,
-                    neg_pos_ub=-1,
-                    add_gt_as_proposals=True),
-                pos_weight=-1,
-                debug=False),
-            dict(
-                assigner=dict(
-                    type='MaxIoUAssigner',
-                    pos_iou_thr=0.65,
-                    neg_iou_thr=0.65,
-                    min_pos_iou=0.65,
-                    match_low_quality=False,
-                    ignore_iof_thr=-1),
-                sampler=dict(
-                    type='RandomSampler',
-                    num=512,
-                    pos_fraction=0.25,
-                    neg_pos_ub=-1,
-                    add_gt_as_proposals=True),
-                pos_weight=-1,
-                debug=False),
-            dict(
-                assigner=dict(
-                    type='MaxIoUAssigner',
-                    pos_iou_thr=0.75,
-                    neg_iou_thr=0.75,
-                    min_pos_iou=0.75,
-                    match_low_quality=False,
-                    ignore_iof_thr=-1),
-                sampler=dict(
-                    type='RandomSampler',
-                    num=512,
-                    pos_fraction=0.25,
-                    neg_pos_ub=-1,
-                    add_gt_as_proposals=True),
-                pos_weight=-1,
-                debug=False)
-        ]),
     test_cfg=dict(
         rpn=dict(
             nms_pre=1000,
@@ -221,7 +170,7 @@ optimizer = dict(
 epoch_iter = 2262
 lr_config = dict(
     _delete_=True,
-    policy='StepMul',
+    policy='MulStep',
     step=[0, 6 * epoch_iter, 12 * epoch_iter, 20 * epoch_iter, 23 * epoch_iter],
     lr_mul=[1, 0.1, 1, 0.1, 0.01],
     by_epoch=False,

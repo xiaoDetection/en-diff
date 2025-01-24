@@ -5,8 +5,8 @@ Marine Object Detection](). It is based on [mmdetection](https://github.com/open
 ## Models and Results
 |Method|Backbone|Pretrain|$AP$|$AP_{50}$|$AP_{75}$|Model|
 |:-|:-|:-|:-|:-|:-|:-|
-|EnDiff-r50|ResNet50|[cascade_rcnn_r50_coco2017]()|49.9|82.8|52.6|[endiff_r50_urpc]()|
-|EnDiff-xt101|ResNetXT101|[cascade_rcnn_xt101_coco2017]()|50.5|84.1|54.4|[endiff_xt101_urpc]()|
+|EnDiff-r50|ResNet50|[cascade_rcnn_r50_coco2017](https://github.com/xiaoDetection/en-diff/releases/download/models/cascade_rcnn_r50_coco2017.pth)|49.9|82.8|52.6|[endiff_r50_urpc](https://github.com/xiaoDetection/en-diff/releases/download/models/endiff_r50_urpc.pth)|
+|EnDiff-xt101|ResNetXT101|[cascade_rcnn_xt101_coco2017](https://github.com/xiaoDetection/en-diff/releases/download/models/cascade_rcnn_xt101_coco2017.pth)|50.5|84.1|54.4|[endiff_xt101_urpc](https://github.com/xiaoDetection/en-diff/releases/download/models/endiff_xt101_urpc.pth)|
 
 
 ## Usage
