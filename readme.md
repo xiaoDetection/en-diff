@@ -41,8 +41,8 @@ en-diff/
         coco2017/
             train2017/
 ```
-- URPC2020 can be download from [here](https://github.com/xiaoDetection/Learning-Heavily-Degraded-Prior/releases/download/datasets/urpc2020.zip).
-- COCO2017 can be download from [here](https://cocodataset.org/#download)
+- URPC2020 can be downloaded from [here](https://github.com/xiaoDetection/Learning-Heavily-Degraded-Prior/releases/download/datasets/urpc2020.zip).
+- COCO2017 can be downloaded from [here](https://cocodataset.org/#download)
 
 ### Testing
 Here we take testing `EnDiff-r50` as an example.
