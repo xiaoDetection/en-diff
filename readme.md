@@ -1,6 +1,5 @@
 # En-Diff
-This repo is the official implementation of [En-Diff: Learning from Unpaired High-Quality and Underwater Images for
-Marine Object Detection](). It is based on [mmdetection](https://github.com/open-mmlab/mmdetection/tree/2.x) (v2.28.2).
+ It is based on [mmdetection](https://github.com/open-mmlab/mmdetection/tree/2.x) (v2.28.2).
 
 ## Models and Results
 |Method|Backbone|Pretrain|$AP$|$AP_{50}$|$AP_{75}$|Model|
@@ -42,7 +41,8 @@ en-diff/
         coco2017/
             train2017/
 ```
-
+- URPC2020 can be download from [here](https://github.com/xiaoDetection/Learning-Heavily-Degraded-Prior/releases/download/datasets/urpc2020.zip).
+- COCO2017 can be download from [here](https://cocodataset.org/#download)
 
 ### Testing
 Here we take testing `EnDiff-r50` as an example.
